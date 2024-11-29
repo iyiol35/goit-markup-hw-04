@@ -1,0 +1,176 @@
+body {
+    font-family: Roboto,sans-serif;
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    font-weight: 400; 500; 700;
+}
+.tepe{
+    background-color: #ffffff;    
+}
+.tepe .tepe-link{
+    color: #4d5ae5;
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.tepe .tepe-link span {
+    color: #2e2f42;
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+}   
+.tepe .liste .tepelink .link{
+    color: #2e2f42;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    }
+.liste .tepelink .link:hover {
+    color: #404bbf;
+    }
+.liste .tepelink .link:focus{
+    color: #404bbf;
+    }    
+.adres{
+    font-style: normal;
+}
+.adres .liste2 .link-a{
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.liste2 .link-a:hover {
+    color: #404bbf;
+}
+
+.liste2 .link-a:focus {
+    color: #404bbf;
+}
+.parta{
+    background-color: #2e2f42;
+}
+.parta .parta-baslik {
+    color: #ffffff;  
+    font-size: 56px;
+    line-height: 1.07;    
+    letter-spacing: 0.02em;
+    text-align: center;
+}   
+.parta .link-b {
+    background-color: #4D5AE5;
+    color: #ffffff;
+    font-family: Roboto,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.parta .link-b:hover{
+    background-color: #404BBF;
+}
+.parta .link-b:focus {
+    background-color: #404BBF;
+}
+.partb .partb-baslik-a{
+    color: #2e2f42;    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;    
+}
+.partb .liste3 .partb-baslik-a{
+    color: #2e2f42;    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.partb .liste3 .partb-yazi{
+    color: #434455;    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.partc{
+    background-color: #f4f4fd;
+}
+.partc .partc-baslik{
+    color: #2e2f42;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;  
+}
+.partc .liste4 .alt-liste{
+    background-color: #ffffff;
+}
+.partc .liste4 .partc-baslik-a {
+    color: #2e2f42;    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.partc .liste4 .partc-yazi{
+    color: #434455;  
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;    
+}
+.partd .partd-baslik{
+    color: #2e2f42;      
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+}
+.partd .liste5 .altbaslik {
+    color: #2e2f42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.partd .liste5 .partd-yazi {
+    color: #434455; 
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;    
+}
+.final {
+    background-color: #2e2f42;
+}
+.final .final-link {
+    color: #4d5ae5;
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.final .final-link-c {
+    color: #f4f4fd;
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+}
+.final .final-yazi{
+    line-height: 1.5;
+    color:#F4F4FD;
+    letter-spacing: 0.02em;    
+}
