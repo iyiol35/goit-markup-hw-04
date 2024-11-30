@@ -1,176 +1,384 @@
+*,
+*::before *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
     background-color: #ffffff;
-    font-weight: 400; 500; 700;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
 }
-.tepe{
-    background-color: #ffffff;    
+
+img {
+    display: block;
+    width: 100%;
 }
-.tepe .tepe-link{
+
+h1 h2 h3 h4 h5 h6 p ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.item .container {
+    width: 1440px;
+    height: 100%;
+    border: 1px solid #e7e9fc;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 autopx;
+    margin-right: 156px;
+}
+
+.tepe {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+
+}
+
+.tepe .tepe-link {
     color: #4d5ae5;
-    font-family: Raleway,sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
+
 .tepe .tepe-link span {
     color: #2e2f42;
-    font-family: Raleway,sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-}   
-.tepe .liste .tepelink .link{
+}
+
+.tepe .liste_a {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.tepe .tepe-link:last-child {
+    margin: 0;
+}
+
+.tepe .liste_a .tepelink .link {
     color: #2e2f42;
-    font-family: roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    }
-.liste .tepelink .link:hover {
-    color: #404bbf;
-    }
-.liste .tepelink .link:focus{
-    color: #404bbf;
-    }    
-.adres{
-    font-style: normal;
+    display: flex;
+    padding: 24px 0;
 }
-.adres .liste2 .link-a{
-    color: #434455;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.liste2 .link-a:hover {
+
+.liste_a .tepelink .link:focus,
+.liste_a .tepelink .link:hover {
     color: #404bbf;
 }
 
-.liste2 .link-a:focus {
+.adres {
+    font-style: normal;
+}
+
+.adres .liste_b {
+    list-style-type: none;
+    display: flex;
+}
+
+.adres .link-b .link-a {
+    color: #434455;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+.adres .liste_b {
+    margin-right: 40px;
+}
+
+.adres .liste_b:last-child {
+    margin-right: 0px;
+}
+
+.liste_b .link-a:focus,
+.liste_b .link-a:hover {
     color: #404bbf;
 }
-.parta{
+
+.parta {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
+
+.parta .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10;
+}
+
 .parta .parta-baslik {
-    color: #ffffff;  
+    color: #ffffff;
     font-size: 56px;
-    line-height: 1.07;    
+    line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
     text-align: center;
-}   
+}
+
 .parta .link-b {
     background-color: #4D5AE5;
     color: #ffffff;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    flex-direction: row;
 }
-.parta .link-b:hover{
+
+.parta .link-b:focus,
+.parta .link-b:hover {
     background-color: #404BBF;
 }
-.parta .link-b:focus {
-    background-color: #404BBF;
+
+.partb {
+    background-color: #f4f4fd;
+    padding: 120px 0;
 }
-.partb .partb-baslik-a{
-    color: #2e2f42;    
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;    
+
+.partb .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-.partb .liste3 .partb-baslik-a{
-    color: #2e2f42;    
+
+.partb .liste_c {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.liste_c .li-a {
+    width: calc((100% - 72px)/4);
+}
+
+.liste_c .partb-baslik-a {
+    color: #2e2f42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px
 }
-.partb .liste3 .partb-yazi{
-    color: #434455;    
+
+.partb .liste_c .partb-yazi {
+    color: #434455;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    height: 104px;
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: row;
 }
-.partc{
+
+.partc {
     background-color: #f4f4fd;
+    width: 1440px;
+    height: 732px;
+    padding: 120px 0;
 }
-.partc .partc-baslik{
+
+.partc .liste_d div {
+    display: flex;
+    gap: 24px;
+    padding: 32px 0;
+}
+
+.partc .partc-baslik {
     color: #2e2f42;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: capitalize;  
+    text-transform: capitalize;
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: row;
+    margin-top: 120px;
+    margin-left: 639px;
+    margin-top: 0px;
+    margin-bottom: 72px;
 }
-.partc .liste4 .alt-liste{
+
+.partc .liste_d {
+    display: flex;
+    box-sizing: content-box;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.alt-liste {
     background-color: #ffffff;
+    width: calc((100%-72px)/4);
+    border-radius: 0px 0px 4px 4px;
 }
-.partc .liste4 .partc-baslik-a {
-    color: #2e2f42;    
+
+.alt-liste .name {
+    padding: 32px 0;
+}
+
+.alt-liste .name .partc-baslik-a {
+    color: #2e2f42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
 }
-.partc .liste4 .partc-yazi{
-    color: #434455;  
+
+.altliste .name .partc-yazi {
+    color: #434455;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em;
+    padding: 32px 0;
 }
-.partd .partd-baslik{
-    color: #2e2f42;      
+
+.name p {
+    text-align: center;
+}
+
+.partd {
+    padding: 120px 0;
+}
+
+.partd .partd-baslik {
+    color: #2e2f42;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: row;
+    margin-bottom: 72px;
 }
-.partd .liste5 .altbaslik {
+
+.partd .liste_e {
+    width: 1128px;
+    height: 420px;
+    box-sizing: content-box;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 48px;
+    margin-left: 156px;
+    margin-right: 156px;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.list {
+    width: calc((100% - 72px)/4);
+}
+
+.liste_e .name-a {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.liste_e .name-a h3 {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none
+}
+
+.liste_e .altbaslik {
     color: #2e2f42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
 }
-.partd .liste5 .partd-yazi {
-    color: #434455; 
+
+.liste_e .partd-yazi {
+    color: #434455;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em;
+    text-align: center;
 }
+
 .final {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
-.final .final-link {
+
+.final-link {
     color: #4d5ae5;
-    font-family: Raleway,sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
+
 .final .final-link-c {
     color: #f4f4fd;
-    font-family: Raleway,sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
+    display: inline-block;
 }
-.final .final-yazi{
+
+.final .final-yazi {
     line-height: 1.5;
-    color:#F4F4FD;
-    letter-spacing: 0.02em;    
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    max-width: 264px;
 }
