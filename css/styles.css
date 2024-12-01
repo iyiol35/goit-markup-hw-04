@@ -128,33 +128,29 @@ h1 h2 h3 h4 h5 h6 p {
     gap: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.adres .link-b .link-a {
-    color: #434455;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .adres .liste_b {
     margin-right: 40px;
 }
-.adres .liste_b:last-child {
-    margin-right: 0px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.email-address {
     color: #434455;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-.liste_b .link-a:focus,
-.liste_b .link-a:hover {
+.liste_b .email:focus,
+.liste_b .email-a:hover {
     color: #404bbf;
+}
+.phone-number {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .parta {
