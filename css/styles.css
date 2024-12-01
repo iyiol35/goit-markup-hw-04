@@ -1,8 +1,17 @@
 *,
-*::before *::after {
+*::before
+*::after {
     box-sizing: border-box;
+}
+ul,
+ol {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+}
+a {
+    text-decoration: none;
+    font-style: normal;
 }
 
 body {
@@ -20,9 +29,10 @@ body {
 img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
-h1 h2 h3 h4 h5 h6 p ul {
+h1 h2 h3 h4 h5 h6 p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -34,22 +44,20 @@ h1 h2 h3 h4 h5 h6 p ul {
 }
 
 .item .container {
-    width: 1440px;
-    height: 100%;
     border: 1px solid #e7e9fc;
     box-sizing: content-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 autopx;
-    margin-right: 156px;
+    margin: 0 autopx;    
 }
 
 .tepe {
     background-color: #ffffff;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -69,7 +77,6 @@ h1 h2 h3 h4 h5 h6 p ul {
 }
 
 .tepe .liste_a {
-    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -100,8 +107,8 @@ h1 h2 h3 h4 h5 h6 p ul {
 }
 
 .adres .liste_b {
-    list-style-type: none;
     display: flex;
+    gap: 40px;
 }
 
 .adres .link-b .link-a {
@@ -126,6 +133,16 @@ h1 h2 h3 h4 h5 h6 p ul {
 .parta {
     background-color: #2e2f42;
     padding: 188px 0;
+    text-align: center;
+    display: flex;
+    flex-shrink: 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .parta .container {
@@ -143,6 +160,12 @@ h1 h2 h3 h4 h5 h6 p ul {
     letter-spacing: 0.02em;
     max-width: 496px;
     text-align: center;
+    font-weight: 700;
+    margin-bottom: 48px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .parta .link-b {
@@ -187,13 +210,27 @@ h1 h2 h3 h4 h5 h6 p ul {
 }
 
 .partb .liste_c {
-    list-style-type: none;
     display: flex;
     gap: 24px;
+    flex-direction: row;
+    flex-shrink: 0;
 }
 
 .liste_c .li-a {
     width: calc((100% - 72px)/4);
+    flex-shrink: 0;
+}
+.liste_c-icon{
+display: flex;
+width: 264px;
+height: 112px;
+flex-shrink: 0;
+justify-content: center;
+align-items: center;
+background-color: #F4F4FD;
+margin-bottom: 8px;
+border-radius: 4px;
+border: 1px solid #8E8F99;
 }
 
 .liste_c .partb-baslik-a {
@@ -202,7 +239,7 @@ h1 h2 h3 h4 h5 h6 p ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px
+    margin-bottom: 8px;
 }
 
 .partb .liste_c .partb-yazi {
@@ -220,12 +257,10 @@ h1 h2 h3 h4 h5 h6 p ul {
 
 .partc {
     background-color: #f4f4fd;
-    width: 1440px;
-    height: 732px;
     padding: 120px 0;
 }
 
-.partc .liste_d div {
+.partc .liste_d .name{
     display: flex;
     gap: 24px;
     padding: 32px 0;
@@ -249,23 +284,53 @@ h1 h2 h3 h4 h5 h6 p ul {
 
 .partc .liste_d {
     display: flex;
-    box-sizing: content-box;
-    list-style-type: none;
     flex-direction: row;
+    gap: 24px;  
+}
+.icons-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
+    padding: 0px 32px;
+    margin-top: 16px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #F4F4FD;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.team-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #f4f4fd;
+}
+.social-link:hover {
+    background-color: #404BBF;
+    color: #F4F4FD;
 }
 
-.alt-liste {
+.social-link:focus {
+    background-color: #404BBF;
+}
+.partc .listed .alt-liste {
     background-color: #ffffff;
     width: calc((100%-72px)/4);
     border-radius: 0px 0px 4px 4px;
 }
 
-.alt-liste .name {
+.partc .listed .alt-liste .name {
     padding: 32px 0;
 }
 
-.alt-liste .name .partc-baslik-a {
+.partc .listed .alt-liste .partc-baslik-a {
     color: #2e2f42;
     font-weight: 500;
     font-size: 20px;
@@ -273,22 +338,22 @@ h1 h2 h3 h4 h5 h6 p ul {
     letter-spacing: 0.02em;
     margin-bottom: 8px;
     text-align: center;
+    text-transform: capitalize;
+    text-align: center;
 }
 
-.altliste .name .partc-yazi {
-    color: #434455;
+.partc .listed .altliste .partc-yazi {
+    font-weight: 400;
     font-size: 16px;
+    color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 32px 0;
-}
-
-.name p {
     text-align: center;
 }
 
 .partd {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .partd .partd-baslik {
@@ -302,55 +367,73 @@ h1 h2 h3 h4 h5 h6 p ul {
     box-sizing: content-box;
     flex-direction: row;
     margin-bottom: 72px;
+    margin-top: 120px;
+    margin-left: 639px;
+    margin-top: 0px;
 }
 
 .partd .liste_e {
-    width: 1128px;
-    height: 420px;
-    box-sizing: content-box;
-    list-style-type: none;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     column-gap: 24px;
     row-gap: 48px;
-    margin-left: 156px;
-    margin-right: 156px;
+    margin-left: 0px;
     flex-wrap: wrap;
-    margin-bottom: 120px;
 }
-
-.list {
+.liste_e:hover {
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+ 
+}
+.img-box {
+    position: relative;
+    overflow: hidden;
+}
+.text-box {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.liste_e:hover .text-box {
+    transform: translateY(0%);
+}
+.partd .liste_e .list {
     width: calc((100% - 72px)/4);
+    flex-shrink: 0;
+    flex-basis: 360px;
+    position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
 }
-
-.liste_e .name-a {
+.partd .liste_e .name-a {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-
-.liste_e .name-a h3 {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none
+.liste_e img {
+    width: 100%;
+    display: block;
+    height: auto;
 }
-
-.liste_e .altbaslik {
+.partd .liste_e .altbaslik {
+    display: inline-block;
     color: #2e2f42;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
+    font-weight: 500;    
+    text-align: left;
     margin-bottom: 8px;
 }
 
-.liste_e .partd-yazi {
+.partd .liste_e .partd-yazi {
     color: #434455;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
+    text-align: left;
 }
 
 .final {
